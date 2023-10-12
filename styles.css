@@ -174,8 +174,9 @@ p, a {
         }
 
 .cta {
+    display: flex;
+    align-items: center;
     height: 500px;
-    padding-top: 144px;
     background-image: url(media/cta_bg.webp);
     background-size: cover;
     background-position: center;
