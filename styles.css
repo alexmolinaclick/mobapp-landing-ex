@@ -85,7 +85,7 @@ p, a {
             background-color: var(--main-color);
         }
 
-/* --- STRUCTURE --- */
+/* --- DESKTOP STRUCTURE --- */
 
 .header {
     height: 70px;
@@ -135,6 +135,7 @@ p, a {
         position: absolute;
         right: 10%;
         bottom: 0;
+        width: 380px;
     }
 
     .services {
@@ -214,3 +215,158 @@ p, a {
         .footer__copyright a:hover {
             color: var(--acc-color);
         }
+
+/* --- MOBILE AND RESPONSIVE CSS --- */
+
+@media screen and (max-width: 428px) {
+    .hero__img {
+        right: 2%;
+    }
+
+    .quote {
+        height: 1100px;
+    }
+        .quote__section {
+            padding-top: 78px;
+            padding-bottom: 100px;
+        }
+}
+
+@media screen and (max-width: 799px) {
+    .header__section {
+        flex-direction: column;
+    }
+    .header__logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero {
+        height: 1100px;
+    }
+        .hero__cta {
+            width: 100%;
+            text-align: center;
+        }
+            .hero__cta .button {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        .hero__img {
+            width: 320px;
+        }
+    
+    .services {
+        margin-bottom: 90px;
+    }
+        .services__cards {
+            flex-direction: column;
+        }
+        .services__card {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .services__card:not(:last-child) {
+                margin-bottom: 32px;
+            }
+    
+    .quote {
+        height: 700px;
+    }
+
+    .cta {
+        height: 540px;
+        background-position: top;
+    }
+        .cta__section {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 280px;
+            padding: 1.2rem 2.2rem;
+        }
+        .cta__text {
+            width: 100%;
+            text-align: center;
+        }
+
+    .footer {
+        height: 94px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 989px) {
+    .hero {
+        margin-top: -120px;
+        height: 670px;
+    }
+        .hero__section {
+            padding-top: 150px;
+        }
+        .hero__cta {
+            width: 50%;
+        }
+        .hero__img {
+            width: 320px;
+            right: 8%;
+        }
+    
+    .services {
+        margin-bottom: 70px;
+    }
+        .services__cards {
+            flex-wrap: wrap;
+        }
+        .services__card:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    
+    .quote {
+        height: 480px;
+    }
+
+    .cta {
+        height: 420px;
+        background-size: auto;
+        background-position: bottom;
+    }
+        .cta__text {
+            width: 50%;
+        }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    .header__logo {
+        width: 30%;
+    }
+    .navbar {
+        text-align: end;
+        width: 50%;
+    }
+
+    .hero {
+        height: 590px;
+    }
+        .hero__cta {
+            width: 52%;
+        }
+        .hero__img {
+            width: 350px;
+        }
+
+    .services__cards {
+        flex-wrap: wrap;
+    }
+    .services__card {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
