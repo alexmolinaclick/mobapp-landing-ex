@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-/* --- GLOBAL STYLES --- */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -11,8 +13,6 @@ body {
     margin: 0;
     font-family: "Poppins", arial, sans-serif;
 }
-
-/* --- COLORS AND FONTS --- */
 
 :root {
     --main-color: rgb(54, 19, 102);
@@ -216,7 +216,7 @@ p, a {
             color: var(--acc-color);
         }
 
-/* --- MOBILE AND RESPONSIVE CSS --- */
+/* --- RESPONSIVE STYLING --- */
 
 @media screen and (max-width: 428px) {
     .hero__img {
